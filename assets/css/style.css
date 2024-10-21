@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wdth,wght,YTLC@6..12,75..125,500,440..540&family=Raleway:ital@0;1&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/star-wars');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('https://wallpapercave.com/wp/wp12481712.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+/* TITULO */
+.titulo{
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+#titulo{
+    color: #ffffffa7;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+#star{
+    color: rgb(255, 255, 53);
+    font-family: 'Star Wars', sans-serif;
+    font-size: 4.5rem;
+    text-align: center;
+}
+.titulo:hover #titulo {
+    transform: translateY(-10px); 
+}
+
+.titulo:hover #star {
+    transform: translateY(-10px); 
+}
+/* LINEA */
+.contenedor-linea {
+    display: flex;
+    justify-content: flex-start; 
+    position: relative;
+    padding-left: 50px; 
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+.linea-vertical {
+    width: 1px;
+    height: 1000px;
+    background-color: white;
+    position: relative;
+    
+}
+.punto {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(255, 209, 6);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.punto:nth-child(1) {
+    top: 10%;
+}
+.punto:nth-child(2) {
+    top: 50%;
+}
+.punto:nth-child(3) {
+    top: 89%;
+}
+.punto::before {
+    content: attr(data-num); 
+    position: absolute;
+    left: -60px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: white; 
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 14px;
+    
+}
+
+/* CARD PRINCIPALES*/
+.card {
+    transition: transform 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+}
+
+.card{
+    background-color: transparent;
+    margin-right: 10px;
+}
+#card-uno{
+    width: 330px; 
+    height: 150px; 
+    margin-top: -950px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.circle-red {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(244, 49, 49, 0.701); 
+    border-radius: 50%; 
+    margin: 20px 20px 20px ; 
+    margin-left: 10px;
+}
+#uno{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    margin-top: -45px;
+    margin-bottom: 10px;
+    color: white;
+}
+#parrafo-uno{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    color: white;
+}
+
+#new-cards-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px; 
+    justify-content: flex-start;
+    
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+#arriba-cards{
+    margin-left: 650px;
+    margin-top: -175px;
+    height: 110px;
+    gap: 90px;
+}
+#abajo-cards{
+    margin-left: 170px;
+    gap: 102px;
+    margin-bottom: -110px;
+}
+.card-body{
+    width: 330px; 
+    height: 100px; 
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    
+}
+.card-body h5{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-body p{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    color: white;
+}
+.circle-red-1 {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(244, 49, 49, 0.701); 
+    border-radius: 50%; 
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+/* SECUNDARIOS */
+.secundarios {
+    width: 330px; 
+    height: 150px; 
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 190px;
+    margin-left: 200px;
+}
+#card-dos{
+    z-index: 10;
+    display: flex; 
+    align-items: center; 
+    background-color: transparent; 
+    width: 330px; 
+    height: 150px;
+    padding: 15px; 
+    border-radius: 8px; 
+}
+
+.circle-green {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(119, 244, 84, 0.653); 
+    border-radius: 50%; 
+    margin-top: 20px; 
+    margin-left: 5px;
+}
+#dos{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+    color: white;
+}
+#parrafo-dos{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 55px;
+    color: white;
+}
+.card-body-secundarios{
+    width: 330px; 
+    height: 100px; 
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    
+}
+#new-secondary-cards-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%; 
+    align-items: center; 
+}
+
+#arriba-secondary-cards, #abajo-secondary-cards {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    width: 90%; 
+    padding: 10px 0; 
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-left: 1000px;
+    margin-bottom: 20px;
+}
+#arriba-secondary-cards{
+    margin-left: 870px;
+    margin-top: -125px;
+    height: 100px;
+    gap: 450px;
+}
+#abajo-secondary-cards{
+    margin-left: -90px;
+    gap: 465px;
+    margin-top: 50px;
+    margin-bottom: -110px;
+}
+.circle-green-2{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(119, 244, 84, 0.653); 
+    border-radius: 50%; 
+    margin-top: 20px; 
+    margin-left: 20px;
+}
+.card-body-secundarios h5{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-body-secundarios p{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    color: white;
+}
+
+
+/* OTROS PERSONAJES */
+
+#card-otros{
+    width: 330px; 
+    height: 150px; 
+    margin-top: 270px;
+    margin-left: 200px;
+    margin-bottom: 50px;
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.circle-blue {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(89, 209, 245, 0.648); 
+    border-radius: 50%; 
+    margin: 0 auto 20px; 
+    margin-left: 25px;
+    margin-top: 30px;
+}
+#otros{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 75px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+#parrafo-otros{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 75px;
+}
+.card-body-otros{
+    width: 330px; 
+    height: 100px; 
+    background-color: #010b14b8; 
+    color: white; 
+    border: 1px solid rgba(255, 255, 0, 0.401);
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    margin-left: 30px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.circle-blue-3{
+    width: 30px;
+    height: 30px;
+    background-color: rgba(89, 209, 245, 0.648); 
+    border-radius: 50%; 
+    margin: 0 auto 20px; 
+    margin-left: 25px;
+    margin-top: 30px;
+}
+.card-body-otros h5{
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    margin-top: -60px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-body-otros p{
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-left: 70px;
+    color: white;
+}
+#new-other-cards-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    width: 100%; 
+    align-items: center; 
+}
+
+#arriba-other-cards, #abajo-other-cards {
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 20px; 
+    flex-wrap: nowrap; 
+    width: 90%; 
+    padding: 10px 0; 
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-left: 1000px;
+    margin-bottom: 20px;
+}
+#arriba-other-cards{
+    margin-left: 1100px;
+    margin-top: -175px;
+    height: 100px;
+    gap: 105px;
+}
+#abajo-other-cards{
+    margin-left: 140px;
+    gap: 110px;
+    margin-top: 50px;
+    margin-bottom: -110px;
+}
+
