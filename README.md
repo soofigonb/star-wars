@@ -1,4 +1,5 @@
 STAR WARS - Dimensiones de los personajes
+
 Este es un proyecto web que muestra información sobre las dimensiones de personajes populares, secundarios y otros personajes del universo de STAR WARS. La página está diseñada con HTML, CSS y JavaScript, utilizando Bootstrap 5 y jQuery para mejorar el diseño y la funcionalidad.
 
 Tabla de Contenidos
